@@ -132,6 +132,11 @@
 	section .contact {
 		text-align: left;
 	}
+
+	.concert {
+		max-width: 740px;
+		padding: 20px;
+	}
 }
 
 @media screen and (min-width: 981px){
@@ -160,10 +165,10 @@
 	}
 	
 	header img {
-	height: 100px;
-	position: absolute;
-	top: 25px;
-	right: 25px;
+		height: 100px;
+		position: absolute;
+		top: 25px;
+		right: 25px;
 	}
 	
 	nav ul {
@@ -254,5 +259,14 @@
 	.social-links a:last-child {
 		margin-left: 75px;
 	}
+
+	.concert {
+		max-width: 740px;
+		padding: 20px;
+		max-height: 600px;
+		display: block;
+		margin: 0 auto;
+	}
+
 
 }
