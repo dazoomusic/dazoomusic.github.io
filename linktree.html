@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dazoo</title>
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+
+        :root {
+            --main-color: #5d017a;
+            --white:#fff;
+        }
+
+
+        .topPicture {
+           width: min(300px, 50%);
+           border-radius: 16px;
+           border: 10px solid var(--white);
+        }
+
+        .one-one-ratio {
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .logo-dazoo {
+            width: min(300px, 50%);
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .selector {
+            width: 90%;
+            height: 50px;
+            background-color: var(--white);
+            box-shadow: 16px 16px var(--main-color);
+            border-radius: 32px;
+            margin-top: 1em;
+            margin-bottom: 2em;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            row-gap: 50px;
+        }
+
+        .right {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        body {
+            background: rgb(226,214,251);
+            background: linear-gradient(315deg, #7a0045 30%, #7a007a 50%, #5d017a 100%);
+            color: var(--main-color);
+            text-align: center;   
+            font-family: 'Sarala', cursive;
+
+        }
+
+        h2 {
+            font-family: 'Sofadi One', cursive;
+            margin-bottom: 0;
+            color: #FFF;
+        }
+
+        body::-webkit-scrollbar{
+            display: none;
+        }
+
+        .logo {
+            width: 40px;
+            filter: invert(1);
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+        <div class="grid">
+            <div class="left">
+                <img src="/data/img/gallery/IMG_1707.png" class="one-one-ratio topPicture">
+                <img src="/data/img/logo-dazoo.png" class="logo-dazoo">
+                <h2>Viens faire partie de la team Dazoo</h2>
+            </div>
+            <article class="right">
+                <div>
+                    Viens voir notre vie
+                    <nav class="selector">
+                        <a href="https://www.instagram.com/dazoo_music/" class="secondary">
+                            <img src="/data/img/social-icons/insta.png" alt="" class="logo hover">
+                        </a>
+                        <a href="https://www.facebook.com/Dazoomusicofficiel" class="secondary">
+                            <img src="/data/img/social-icons/fb.png" alt="" class="logo hover">
+                        </a>
+                    </nav>
+                </div>
+
+                <div>
+                    Viens nous écouter
+                    <nav class="selector">
+                        <a href="https://open.spotify.com/artist/2auGf5xOyI8hMJqkaeLy9R?si=qFPROpSmTdSBlix6wmiaJg" class="secondary">
+                            <img src="/data/img/social-icons/spotify.png" alt="" class="logo hover">
+                        </a>
+                        <a href="https://youtube.com/@dazoomusic" class="secondary">
+                            <img src="/data/img/social-icons/ytb.png" alt="" class="logo hover">
+                        </a>
+                        <a href="https://music.apple.com/us/artist/dazoo/1698344813" class="secondary">
+                            <img src="/data/img/social-icons/apple.png" alt="" class="logo hover">
+                        </a>
+                        <a href="https://deezer.page.link/7EJfyDr1p5kF3rqe6" class="secondary">
+                            <img src="/data/img/social-icons/deezer.png" alt="" class="logo hover">
+                        </a>
+                    </nav>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
